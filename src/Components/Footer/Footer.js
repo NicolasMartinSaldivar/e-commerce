@@ -4,7 +4,9 @@ import './Footer.css'
 
 export default function Footer(){
     return(
-
-        <p>mensaje fin de  pagina</p>
+        <footer>
+            <li>Min Joyas 2021</li>
+        </footer>
+    
     )
 }

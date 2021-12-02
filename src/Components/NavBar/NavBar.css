@@ -1,6 +1,6 @@
 nav{
     display: flex;
-    background-color: grey;
+    background-color: lightgray;
     justify-content: space-between;
     align-items: center;
     padding: 10px 26px;
@@ -24,4 +24,7 @@ nav ul li{
 
 .container-logo img{
     width: 100%;
+}
+.CartWidget{
+    margin-right: 20%;
 }
