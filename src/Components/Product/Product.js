@@ -1,5 +1,8 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import './Product.css'
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid'
+import Item from '../Item/Item.js'
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import Button from '@mui/material/Button';
@@ -32,6 +35,24 @@ export default function Product({stock}){
             <RemoveIcon onClick={removeItem} />
             <Button onClick={AddShoppingCart}>Agregar al Carrito</Button>
             <span>stock:{stock}</span>
+
+        <Container className="product-container">
+            <Grid container spacing={2}>
+                <Grid item xs={3}>
+                    <Item stock={10} img="remera.jpeg"/>
+                </Grid>
+                <Grid item xs={3}>
+                    <Item stock={2} img="remera.jpeg"/>
+                </Grid>
+                <Grid item xs={3}>
+                    <Item stock={3} img="remera.jpeg"/>
+                </Grid>
+                <Grid item xs={3}>
+                    <Item stock={3} img="remera.jpeg"/>
+                </Grid>
+
+            </Grid>
+        </Container>
         </div>
 
     )
